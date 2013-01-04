@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical" android:background="#fff">
+	<!-- 상단 타이틀 -->
+	<LinearLayout android:layout_height="40dp" android:layout_width="fill_parent"
+		android:background="@drawable/bg_top">	
+		<TextView android:layout_height="fill_parent" android:layout_width="fill_parent" android:text="설정" 
+			android:textSize="17sp" android:textColor="#fff" android:gravity="center_vertical|center_horizontal" />		
+	</LinearLayout>
+		
+	<ScrollView
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent" >
+		
+		<LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical">	
+		<!-- 디스플레이 설정 -->
+		<LinearLayout android:background="@drawable/bg_cont_tit2" android:layout_width="fill_parent" android:layout_height="34dp">
+			<TextView 
+				android:layout_marginLeft="13.33dp" 
+				android:text="디스플레이 설정" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textSize="13sp" 
+				android:textColor="#000" 
+				android:layout_gravity="center_vertical" />
+		</LinearLayout>
+		<!-- 가로보기 -->
+		<TableLayout android:id="@+id/btnLandscape"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:paddingLeft="13.33dp"
+			android:paddingRight="13.33dp"
+			android:paddingTop="8dp"
+			android:paddingBottom="8dp"
+			android:shrinkColumns="0"
+			android:stretchColumns="0"
+			android:background="@drawable/bg_list_setting"
+			android:clickable="true" >
+			<TableRow>
+			<LinearLayout 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="vertical" >	
+				<TextView 
+					android:text="찬미가 가로모드 보기" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_marginRight="13.33dp" 
+					android:textSize="16sp" 
+					android:textColor="#000" />
+					
+				<TextView 
+					android:text="가로모드에서 찬미가를 보여줍니다." 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_marginRight="13.33dp" 
+					android:textSize="12sp"
+					android:textColor="#888" />
+					
+			</LinearLayout>
+			<ToggleButton android:id="@+id/chkLandscape"
+				android:layout_width="26dp"
+				android:layout_height="26dp"
+				android:layout_gravity="center_vertical"
+				android:clickable="false"
+				android:textOff=""
+				android:textOn=""
+				android:background="@drawable/toggle" />
+			</TableRow>
+		</TableLayout>
+	
+		<!-- 다운로드 -->
+		<LinearLayout android:background="@drawable/bg_cont_tit2" android:layout_width="fill_parent" android:layout_height="34dp">
+			<TextView 
+				android:layout_marginLeft="13.33dp" 
+				android:text="다운로드" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textSize="13sp" 
+				android:textColor="#000" 
+				android:layout_gravity="center_vertical" />
+		</LinearLayout>
+		<!-- 찬미가 다운로드 -->
+		<LinearLayout android:id="@+id/btnDownload"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="8dp"
+			android:paddingBottom="8dp"
+			android:background="@drawable/bg_list_setting"
+			android:clickable="true" >
+		
+			<TextView 
+				android:layout_marginLeft="13.33dp" 
+				android:text="찬미가 이미지 파일 다운로드" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textSize="16sp" 
+				android:textColor="#000" 
+				android:layout_gravity="center_vertical" />
+			
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:gravity="right" >
+				
+				<ImageView 
+					android:src="@drawable/btn_arr_more"
+					android:layout_width="11.33dp"
+					android:layout_height="15.33dp"
+					android:layout_gravity="center_vertical"
+					android:layout_marginRight="13.33dp" />
+				
+			</LinearLayout>
+		</LinearLayout>
+	
+		<!-- 질문/버그 -->
+		<LinearLayout android:background="@drawable/bg_cont_tit2" android:layout_width="fill_parent" android:layout_height="34dp">
+			<TextView 
+				android:layout_marginLeft="13.33dp" 
+				android:text="질문/버그" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textSize="13sp" 
+				android:textColor="#000" 
+				android:layout_gravity="center_vertical" />
+		</LinearLayout>
+		<!-- 개발자 트위터 -->
+		<LinearLayout android:id="@+id/btnTwitter"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="8dp"
+			android:paddingBottom="8dp"
+			android:background="@drawable/bg_list_setting"
+			android:clickable="true" >
+		
+			<TextView 
+				android:layout_marginLeft="13.33dp" 
+				android:text="개발자 트위터에 글 남기기" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textSize="16sp" 
+				android:textColor="#000" 
+				android:layout_gravity="center_vertical" />
+			
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:gravity="right" >
+				
+				<ImageView 
+					android:src="@drawable/btn_arr_more"
+					android:layout_width="11.33dp"
+					android:layout_height="15.33dp"
+					android:layout_gravity="center_vertical"
+					android:layout_marginRight="13.33dp" />
+				
+			</LinearLayout>
+		</LinearLayout>
+	
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

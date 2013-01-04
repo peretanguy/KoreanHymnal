@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="@drawable/leather"
+    
+    >
+    <!-- 상단 타이틀 -->
+	<FrameLayout 
+		android:layout_height="40dp"
+		android:layout_width="fill_parent"
+		android:background="@drawable/bg_top" 
+		android:layout_gravity="center_vertical"
+		android:paddingRight="6.66dp" >
+		
+		<TextView android:id="@+id/txtTitle"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent" 
+			android:text="찬미가 검색" 
+			android:textSize="19sp" 
+			android:textColor="#fff" 
+			android:gravity="center_vertical|center_horizontal" />
+		
+		<Button
+			android:id="@+id/btnSetting" 
+			android:layout_width="wrap_content"
+			android:layout_height="29.33dp"
+			android:layout_marginLeft="6.66dp" 
+			android:background="@drawable/btn_top_tit_selector" 
+			android:layout_gravity="right|center_vertical"
+			android:text="설정"
+			android:textSize="13sp"
+			android:textColor="#fff" />
+	</FrameLayout>
+	<ScrollView 
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+    	
+		<LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:orientation="vertical" android:padding="5dp">
+			
+			<TextView android:layout_height="10dip" android:layout_width="fill_parent"/>
+		    <LinearLayout 
+		    	android:orientation="vertical"
+		    	android:layout_width="fill_parent"
+		    	android:id="@+id/layoutText" android:layout_height="wrap_content">
+		    
+		    	<EditText android:id="@+id/txtSearch" android:textSize="24sp"
+					android:layout_width="fill_parent" android:singleLine="true" android:layout_height="wrap_content" android:hint="찬미가 장수를 입력하세요." android:inputType="phone" android:editable="false" android:focusable="false"/>
+		    </LinearLayout>
+		    <TextView android:layout_height="10dip" android:layout_width="fill_parent"/>
+		    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:stretchColumns="0,1,2">
+			    <TableRow>
+			        <Button android:id="@+id/btn1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text=" 1 " android:textSize="20sp" />
+			        <Button android:id="@+id/btn2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text=" 2 " android:textSize="20sp" />
+			        <Button android:id="@+id/btn3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text=" 3 " android:textSize="20sp" />
+			    </TableRow>
+			    <TableRow>
+			        <Button android:id="@+id/btn4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text=" 4 " android:textSize="20sp" />
+			        <Button android:id="@+id/btn5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text=" 5 " android:textSize="20sp" />
+			        <Button android:id="@+id/btn6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text=" 6 " android:textSize="20sp" />
+			    </TableRow>
+			    <TableRow>
+			        <Button android:id="@+id/btn7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text=" 7 " android:textSize="20sp" />
+			        <Button android:id="@+id/btn8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text=" 8 " android:textSize="20sp" />
+			        <Button android:id="@+id/btn9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text=" 9 " android:textSize="20sp" />
+			    </TableRow>
+			    <TableRow>
+			        <Button android:id="@+id/btnDelete" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Del" android:textSize="15sp" />
+			        <Button android:id="@+id/btn0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text=" 0 " android:textSize="20sp" />
+			        <Button android:id="@+id/btnOpen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="OK" android:textSize="15sp" />
+			    </TableRow>
+			</TableLayout>
+			
+			<TextView 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="30dp"
+				android:gravity="center_horizontal"
+				android:textSize="15sp"
+				android:text="온 땅이 주께 경배하고 주를 찬양하며\n주의 이름을 찬양하리이다 할지어다." />
+	    </LinearLayout>
+	</ScrollView>	   
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="305.33dp"
+	android:layout_height="wrap_content"
+	android:paddingTop="14dp"
+	android:background="@drawable/p_bg"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+	
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:textColor="#fff"
+		android:textSize="20sp"
+		android:text="찬미가 파일 다운로드" />
+		
+	<TextView android:id="@+id/txtMsg"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16.66dp"
+		android:gravity="center_horizontal"
+		android:textColor="#fff"
+		android:textSize="16sp"
+		android:text="다운로드 중" />
+		
+	
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_marginTop="16.66dp"
+		android:background="#323C45"
+		android:text="" />
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_marginBottom="13.33dp"
+		android:background="#55616C"
+		android:text="" />	
+	
+	<Button android:id="@+id/btnStop"
+		android:layout_width="101.33dp"
+		android:layout_height="33.33dp"
+		android:layout_marginBottom="13.33dp"
+		android:background="@drawable/btn_dialog_ok_selector"
+		android:textColor="#fff"
+		android:text="다운로드 중지" />
+</LinearLayout>
